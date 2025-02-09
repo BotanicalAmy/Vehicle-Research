@@ -72,7 +72,7 @@ For every increase in mileage, the predicted price of a Toyota Rav4 decreases by
 I pulled the five year cost of ownership for both the Volvo XC60 and the Toyota Rav4 from Edmunds.com. Costs included fuel, maintenance, repairs, and insurance. I did not include the depreciation, as this is accounted for in my model. Edmmunds did note that the Volvo XC60 depreciates $32,044 in the first five years, while the Toyota Rav4 depreciates by $14,412.
 
 For the first five years, the Volvo XC60 has a total cost of ownership of $25,654 and the Toyota Rav4 has a total cost of ownership of $20,239.
-The Volvo XC60 is $5,415 more expensive to own than the Toyota Rav4 for the first five years. Premium fuel and repair costs are the biggest contributors to the difference in cost of owndership.
+The Volvo XC60 is $5,415 more expensive to own than the Toyota Rav4 for the first five years. Premium fuel and repair costs are the biggest contributors to the difference in cost of ownership.
 
 ## Calculating net cost
 
@@ -83,22 +83,21 @@ Originally, I tried to predict the cost of both the XC60 and Rav4 at 175,000 mil
 
 After predicting the value of the vehicles when it was time to pass them along to the next owner, I took the original predicted purchase price at 40,000 miles, added the five year cost of ownership for five years, and then subtracted the vehicle's final estimated value at 150,000 miles.
 
-When purchased at 40,000 miles and sold at 150,000 miles:
 * The predicted net ownership cost for the Volvo XC60 is $54,177
 * The predicted net ownership cost for the Toyota Rav4 is $38,350
 
-When purchasing at 40,000 and selling at 150,000 and considering cost of ownership, the Volvo XC60 is $15,826 more expensive to own than the Toyota Rav4.
+When purchasing at 40,000 and selling at 150,000 and considering cost of ownership, the Volvo XC60 is predicted to be $15,826 more expensive than the Toyota Rav4.
 
 # Conclusion
-Math tells me that while the rapid depreciation of the Volvo XC60 makes it an enticing choice, the Volvo XC60 is still predicted to be 41.3% more expensive to own if purchased at 40,000 miles and driven until it reaches 150,000  miles.
+While the rapid depreciation of the Volvo XC60 made me curious about the true cost, math tells me that the Volvo XC60 is predicted to be 41.3% more expensive than the Rav4 if purchased at 40,000 miles and driven until it reaches 150,000  miles.
 
 ### Considerations
-The Volvo XC60 data was sourced from Edmunds.com, and I noticed that some of these values came from Carvana. While I had used a local search for the Edmunds.com web scraping, doing a scrape for both the Volvo XC60 and Toyota Rav4 would have been a better analysis.
+The Volvo XC60 data was sourced from Edmunds.com and the Rav4 data was pulled from a tool using Auto  Trader. I noticed that some of the Edmunds.com values came from Carvana. While I had used a local search for the Edmunds.com web scraping, doing a scrape for both the Volvo XC60 and Toyota Rav4 would have been a better analysis.
 
-Further, the cost of ownership was calculated for the first *five years of ownership*, while I am realistically predicting the ownership starting around year three and ending closer to year eleven or twelve. My pricing model should calculate closer to nine years of ownership, and should probably be higher as older cars tend to have higher maintenance and repair costs.
+Further, the cost of ownership was calculated for the first *five years of ownership*, while I am predicting the ownership starting around year three and ending closer to year eleven or twelve. My pricing model should calculate closer to nine years of ownership and should be higher as older cars tend to have higher maintenance and repair costs.
 
 Creating confidence intervals for my pricing would have been an interesting analysis, as the Volvo XC60 predictions showed greater variability.
 
-In the end, purchases also do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. As you might predict, I am the type to pick form over function.
+In the end, purchases do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. However, I am the type to pick form over function.
 
 I predict a Rav4 is in my future.
