@@ -104,4 +104,4 @@ Creating confidence intervals for my pricing would have been an interesting anal
 
 In the end, purchases do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. The true questions is, do I find the vehicle aesthetic, comfort and fun factor of the XC60 worth the approximately $150 extra monthly cost?
 
-I am the type to pick form over function. *I predict a Rav4 is in my future.*
+*I predict a Rav4 is in my future.*
