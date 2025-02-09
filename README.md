@@ -13,7 +13,7 @@ Both CSV files in my repository were pulled in February of 2024. Since the easy 
 ## Scraping Edmunds.com
 For  those looking to complete a similar datascrape, note the comments added to my notebook. Selenium was not able to understand the "next page" detection using a div based blick. I noticed that each additional page had "&pagenumber=#" to the end of the url. I created a loop to scrape one page at a time, increasing the page by one for each loop.
 
-I had issues with the web driver timing out and certain pages in particular kept stalling the script. I updated my notebook to save each newly scraped page to the csv file and included a page number column. Looking at the csv, I could easily identify what data was properly saved to my file. When my script stalled on page 3, I started the web scrape again setting the page number equal to one. Since my look increases by one each time, the script began on page four and successfully pulled the remaining pages.
+I had issues with the web driver timing out and certain pages in particular kept stalling the script. I updated my notebook to save each newly scraped page to the csv file and included a page number column. Looking at the csv, I could easily identify what data was properly saved to my file. When my script stalled on page 3, I started the web scrape again setting the page number equal to three. Since my loop increases by one each time, the script began on page four and successfully pulled the remaining pages.
 
 I additionally created a loop to skip pages that failed to load. Utilizing both the loop to skip pages the and code to pull pages in batches was needed to retrieve the vehicle data.
 
