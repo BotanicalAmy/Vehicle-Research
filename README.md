@@ -6,7 +6,7 @@ As I have been researching future car options, I have noticed a steep drop in pr
 Our original assignment was completed in R, but I wanted to experiment with the same analysis utilizing Python and additionally do a comparison of the regression models between the XC60 and the Rav4.
 
 ## Used Vehicle Datasets
-Both CSV files in my repository were pulled in February of 2024. Since the easy download option did not include an XC60, I created as script to scrape the Edmunds.com website. I chose Edmunds because the html structure was easier to parse with selenium than Auto Trader; the datasets between AutoTrader and Edmunds seem to be coming from a shared database. Both datasets were pulled for my Denver Metro area.
+Both CSV files in my repository were pulled in February of 2024. Since the easy download option did not include an XC60, I created a script to scrape the Edmunds.com website. I chose Edmunds because the html structure was easier to parse with selenium than Auto Trader; the datasets between AutoTrader and Edmunds seem to be coming from a shared database. Both datasets were pulled for my Denver Metro area.
 
 [Easy Data Option](http://myslu.stlawu.edu/~clee/dataset/autotrader/)
 
@@ -102,6 +102,6 @@ Further, the cost of ownership was calculated for the first *five years of owner
 
 Creating confidence intervals for my pricing would have been an interesting analysis, as the Volvo XC60 predictions showed greater variability.
 
-In the end, purchases do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. However, I am the type to pick form over function.
+In the end, purchases do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. The true questions is, do I find the vehicle aesthetic, comfort and fun factor of the XC60 worth the approximately $150 extra monthly cost?
 
-*I predict a Rav4 is in my future.*
+I am the type to pick form over function. *I predict a Rav4 is in my future.*
