@@ -29,15 +29,45 @@ Below you can see my exploratory data analysis of the XC60 and Rav4. Note that t
 
 ![Rav4 Exploratory Data Analysis](./image/Rav4_price_vs_mileage.jpg)
 
+### Rav4 Exploratory Analysis
+
+Looking at the scatterplot, I notive that there is a large cluster of available vehicles that are 5 years or newer with less than 50,000 miles. I also find it interesting that there are three vehicles for sale over the 200,000 mileage point. The Volvo data does not have a single vehicle for sale with over 180,000 miles. This observation aligns with the known durability of Toyotas, which also accounts for the slower depreciation.
+
 ![XC60 Exploratory Data Analysis](./image/Volvo_price_vs_mile.jpg)
 
+### Rav4 Exploratory Analysis
 
-* Volvo XC60 Linear Regression Model
+Looking at the scatterplot, I notive that there is a large cluster of available vehicles that are 5 years or newer with less than 50,000 miles. I also find it interesting that there are three vehicles for sale over the 200,000 mileage point. The Volvo data does not have a single vehicle for sale with over 180,000 miles. This observation aligns with the known durability of Toyotas, which also accounts for the slower depreciation.
+
+![XC60 vs Rav Regression](./image/Volvo_vs_Rav4_regression.jpg)
+
+### Volvo XC60 Linear Regression Model
 Regression equation: predicted_price = 41459.0 -0.26 * mileage
 R^2: 0.71
 Standard Error: 4906.31
+Vehicles in the data set: 251
 
-* Toyota Rav4 Linear Regression Model
-Regression equation: predicted_price = 37392.46 + -0.16 * mileage
+### Toyota Rav4 Linear Regression Model
+Regression equation: predicted_price = 37392.46 -0.16 * mileage
 R^2: 0.74
 Standard Error: 4051.23
+Vehicles in the data set: 300
+
+
+## Calculating cost of ownnership
+
+The ownership costs below were taken from Edmunds.com. Note, this cost is for the first five years of ownership. Predicting the ownership of these vehicles when purchased gently used requires more time than I have at the moment. I decided to utilize this five year total into this rough estimate.
+
+Of note, Edmunds does call out that the Volvo XC60 typically depreciates $32,044 in the first five years. The Toyota Rav4 depreciates by $14,412. I did not add depreciation into the costs below, since this was taken care of by the linear regression model.
+
+
+For the first five years, the Volvo XC60 has a total cost of ownership of $25654 and the Toyota Rav4 has a total cost of ownership of $20239.
+The Volvo XC60 is $5415 more expensive to own than the Toyota Rav4 for the first five years.
+
+Predicted end price for a Volvo XC60 with 150000 miles: $2564
+Predicted end price for a Toyota Rav4 with 150000 miles: $12695
+
+
+The net ownership cost for the Volvo XC60 is $54177
+The net ownership cost for the Toyota Rav4 is $38350
+When purchasing at 40000 and selling at 150000 and considering cost of ownership, the Volvo XC60 is $15826 more expensive to own than the Toyota Rav4.
