@@ -31,43 +31,74 @@ Below you can see my exploratory data analysis of the XC60 and Rav4. Note that t
 
 ### Rav4 Exploratory Analysis
 
-Looking at the scatterplot, I notive that there is a large cluster of available vehicles that are 5 years or newer with less than 50,000 miles. I also find it interesting that there are three vehicles for sale over the 200,000 mileage point. The Volvo data does not have a single vehicle for sale with over 180,000 miles. This observation aligns with the known durability of Toyotas, which also accounts for the slower depreciation.
+Looking at the scatterplot, I notice that there is a large cluster of available vehicles that are 5 years or newer with less than 50,000 miles. I also find it interesting that there are three vehicles for sale over the 200,000 mileage point. The Volvo data does not have a single vehicle for sale with over 180,000 miles. This observation aligns with the known durability of Toyotas, which also accounts for the slower depreciation.
 
 ![XC60 Exploratory Data Analysis](./image/Volvo_price_vs_mile.jpg)
 
-### Rav4 Exploratory Analysis
+### XC60 Exploratory Analysis
 
-Looking at the scatterplot, I notive that there is a large cluster of available vehicles that are 5 years or newer with less than 50,000 miles. I also find it interesting that there are three vehicles for sale over the 200,000 mileage point. The Volvo data does not have a single vehicle for sale with over 180,000 miles. This observation aligns with the known durability of Toyotas, which also accounts for the slower depreciation.
+The Volvo XC60 depreciation difference is less obvious on a scatterplot. Of note, the oldest XC60 is from 2010. The oldest Rav4 was from 2005. The next step was to fit a linear model to each of the datasets to get a clearer understanding of each vehicles depreciation.
+
+# Making an informed decision
 
 ![XC60 vs Rav Regression](./image/Volvo_vs_Rav4_regression.jpg)
 
+Looking at the comnbined linear models, the Volvo XC60 has a notably steeper drop in value as mileage increases. The two linear models intersect at 44,000 miles, indicating that a Rav4 and XC60 are predicted to have the same price at this mileage. Seeing the two datasets together, I became hopeful that math would indeed justify the purchase of a gently used Volvo XC60.
+
+Looking at the models below, the y-intercept for the Volvo XC60 begins at $41,459, higher than the $37,382 y-intercept for the Rav4. This is not surprising, as the starting cost of the XC60 is significantly higher than the Rav4.
+
+Both models have a similar R^2 value. For the Volvo XC60, 71% of the variability is explained by the model, while 74% of the variability is explained by the model for the Rav4. Additionally, the Volvo XC60 has a larger standard error, indicating that predictions are often off by $4,906. This error is $855 more than the Rav4. The Volvo XC60 does appear to have a broader range of trim levels, which could account for this extra variability.
+
 ### Volvo XC60 Linear Regression Model
-Regression equation: predicted_price = 41459.0 -0.26 * mileage
-R^2: 0.71
-Standard Error: 4906.31
-Vehicles in the data set: 251
+Regression equation: predicted_price = 41459.0 -0.26 * mileage <br />
+R^2: 0.71 <br /> 
+Standard Error: 4906.31 <br />
+Vehicles in the data set: 251 <br />
+
+Simply put, for every increase in mileage, the predicted price of a Volvo XC60 decreases by $.26.
 
 ### Toyota Rav4 Linear Regression Model
-Regression equation: predicted_price = 37392.46 -0.16 * mileage
-R^2: 0.74
-Standard Error: 4051.23
-Vehicles in the data set: 300
+Regression equation: predicted_price = 37392.46 -0.16 * mileage <br />
+R^2: 0.74 <br />
+Standard Error: 4051.23 <br />
+Vehicles in the data set: 300 <br />
 
+For every increase in mileage, the predicted price of a Toyota Rav4 decreases by $.16. The Toyota Rav4 is approxcimately ten cents cheaper to drive per mile than the Volvo XC60.
 
-## Calculating cost of ownnership
+![XC60 vs Rav4](./image/XC60_Rav4_Pic.jpg)
 
-The ownership costs below were taken from Edmunds.com. Note, this cost is for the first five years of ownership. Predicting the ownership of these vehicles when purchased gently used requires more time than I have at the moment. I decided to utilize this five year total into this rough estimate.
+# Calculating cost of ownnership
 
-Of note, Edmunds does call out that the Volvo XC60 typically depreciates $32,044 in the first five years. The Toyota Rav4 depreciates by $14,412. I did not add depreciation into the costs below, since this was taken care of by the linear regression model.
+I pulled the five year cost of ownership for both the Volvo XC60 and the Toyota Rav4 from Edmunds.com. Costs included fuel, maintenance, repairs, and insurance. I did not include the depreciation, as this is accounted for in my model. Edmmunds did note that the Volvo XC60 depreciates $32,044 in the first five years, while the Toyota Rav4 depreciates by $14,412.
 
+For the first five years, the Volvo XC60 has a total cost of ownership of $25,654 and the Toyota Rav4 has a total cost of ownership of $20,239.
+The Volvo XC60 is $5,415 more expensive to own than the Toyota Rav4 for the first five years. Premium fuel and repair costs are the biggest contributors to the difference in cost of owndership.
 
-For the first five years, the Volvo XC60 has a total cost of ownership of $25654 and the Toyota Rav4 has a total cost of ownership of $20239.
-The Volvo XC60 is $5415 more expensive to own than the Toyota Rav4 for the first five years.
+## Calculating net cost
 
-Predicted end price for a Volvo XC60 with 150000 miles: $2564
-Predicted end price for a Toyota Rav4 with 150000 miles: $12695
+Originally, I tried to predict the cost of both the XC60 and Rav4 at 175,000 miles, when I predict I would sell this vehicle. I ended up with a negative predicted value for the Volvo... I changed the code to predict the ending prices for each vehicle at 150,0000 to account for this limitation in my model
 
+* Predicted price for a Volvo XC60 with 150,000 miles: $2,564
+* Predicted price for a Toyota Rav4 with 150,000 miles: $12,695 (impressive)
 
-The net ownership cost for the Volvo XC60 is $54177
-The net ownership cost for the Toyota Rav4 is $38350
-When purchasing at 40000 and selling at 150000 and considering cost of ownership, the Volvo XC60 is $15826 more expensive to own than the Toyota Rav4.
+After predicting the value of the vehicles when it was time to pass them along to the next owner, I took the original predicted purchase price at 40,000 miles, added the five year cost of ownership for five years, and then subtracted the vehicle's final estimated value at 150,000 miles.
+
+When purchased at 40,000 miles and sold at 150,000 miles:
+* The predicted net ownership cost for the Volvo XC60 is $54,177
+* The predicted net ownership cost for the Toyota Rav4 is $38,350
+
+When purchasing at 40,000 and selling at 150,000 and considering cost of ownership, the Volvo XC60 is $15,826 more expensive to own than the Toyota Rav4.
+
+# Conclusion
+Math tells me that while the rapid depreciation of the Volvo XC60 makes it an enticing choice, the Volvo XC60 is still predicted to be 41.3% more expensive to own if purchased at 40,000 miles and driven until it reaches 150,000  miles.
+
+### Considerations
+The Volvo XC60 data was sourced from Edmunds.com, and I noticed that some of these values came from Carvana. While I had used a local search for the Edmunds.com web scraping, doing a scrape for both the Volvo XC60 and Toyota Rav4 would have been a better analysis.
+
+Further, the cost of ownership was calculated for the first *five years of ownership*, while I am realistically predicting the ownership starting around year three and ending closer to year eleven or twelve. My pricing model should calculate closer to nine years of ownership, and should probably be higher as older cars tend to have higher maintenance and repair costs.
+
+Creating confidence intervals for my pricing would have been an interesting analysis, as the Volvo XC60 predictions showed greater variability.
+
+In the end, purchases also do not need to be purely mathematical. Sometimes an item is worth more because of the comfort and fun factor. As you might predict, I am the type to pick form over function.
+
+I predict a Rav4 is in my future.
