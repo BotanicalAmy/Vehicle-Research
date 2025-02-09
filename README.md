@@ -71,7 +71,7 @@ Note: I did not assess for LNE conditions in this notebook. In my R exercise, I 
 
 ![XC60 vs Rav4](./image/XC60_Rav4_Pic.jpg)
 
-# Calculating cost of ownnership
+# Calculating cost of ownership
 
 I pulled the five year cost of ownership for both the Volvo XC60 and the Toyota Rav4 from Edmunds.com. Costs included fuel, maintenance, repairs, and insurance. I did not include the depreciation, as this is accounted for in my model. Edmmunds did note that the Volvo XC60 depreciates $32,044 in the first five years, while the Toyota Rav4 depreciates by $14,412.
 
@@ -93,7 +93,7 @@ After predicting the value of the vehicles when it was time to pass them along t
 When purchasing at 40,000 and selling at 150,000 and considering cost of ownership, the Volvo XC60 is predicted to be $15,826 more expensive than the Toyota Rav4.
 
 # Conclusion
-While the rapid depreciation of the Volvo XC60 made me curious about the true cost, math tells me that the Volvo XC60 is predicted to be 41.3% more expensive than the Rav4 if purchased at 40,000 miles and driven until it reaches 150,000  miles.
+While the rapid depreciation of the Volvo XC60 confirmed my hypothesis that a XC60 and Rav4 are similar in price at 40,000 miles, the Volvo XC60 is predicted to be 41.3% more expensive than the Rav4 over if purchased at 40,000 miles and driven until it reaches 150,000  miles.
 
 ### Considerations
 The Volvo XC60 data was sourced from Edmunds.com and the Rav4 data was pulled from a tool using Auto Trader. I noticed that some of the Edmunds values came from Carvana. While I had used a local search for the Edmunds.com web scraping, doing a scrape for both the Volvo XC60 and Toyota Rav4 would have been a better analysis.
