@@ -67,7 +67,7 @@ For every increase in mileage, the predicted price of a Toyota Rav4 decreases by
 
 Note: I did not assess for LNE conditions in this notebook. In my R exercise, I found powering down the mileage values, taking the square root of the explanatory, had a significant improvement on linearity, normality and equal variance of the residuals. This transformation additionally improved my R^2 value. 
 
-*For the non-statisticians*, taking the square root of mileage and then creating a predicitve model improved the accuracy.
+*For the non-statisticians*, taking the square root of mileage and then creating a predictive model improved the accuracy.
 
 ![XC60 vs Rav4](./image/XC60_Rav4_Pic.jpg)
 
