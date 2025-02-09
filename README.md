@@ -30,3 +30,14 @@ Below you can see my exploratory data analysis of the XC60 and Rav4. Note that t
 ![Rav4 Exploratory Data Analysis](./image/Rav4_price_vs_mileage.jpg)
 
 ![XC60 Exploratory Data Analysis](./image/Volvo_price_vs_mile.jpg)
+
+
+* Volvo XC60 Linear Regression Model
+Regression equation: predicted_price = 41459.0 -0.26 * mileage
+R^2: 0.71
+Standard Error: 4906.31
+
+* Toyota Rav4 Linear Regression Model
+Regression equation: predicted_price = 37392.46 + -0.16 * mileage
+R^2: 0.74
+Standard Error: 4051.23
