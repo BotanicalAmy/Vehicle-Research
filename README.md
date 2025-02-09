@@ -65,7 +65,9 @@ Vehicles in the data set: 300 <br />
 
 For every increase in mileage, the predicted price of a Toyota Rav4 decreases by $.16. Looking only at mileage depreciatation, the Toyota Rav4 is approximately ten cents cheaper to drive per mile than the Volvo XC60.
 
-Note: I did not assess for LNE conditions in this notebook. In my R exercise, I found powering down the mileage values, taking the square root of the explanatory, improved my R^2 value.
+Note: I did not assess for LNE conditions in this notebook. In my R exercise, I found powering down the mileage values, taking the square root of the explanatory, had a significant improvement on linearity, normality and equal variance of the risiduals. This transformation additionally improved my R^2 value. 
+
+*For the non-statisticians*, taking the square root of mileage and then creating a predicitve model improved the accuracy.
 
 ![XC60 vs Rav4](./image/XC60_Rav4_Pic.jpg)
 
