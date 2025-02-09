@@ -29,6 +29,6 @@ I have driven Toyotas my entire life, starting with a Toyota Corolla. I drove th
 
 Below you can see my exploratory data analysis of the XC60 and Rav4. Note that the price is the response (y) variable, and the mileage is the explanatory (x) variable. I added color to the scatterplot to visualize the year of the vehicles.
 
-![Rav4 Exploratory Data Analysis](./image/Rav4_price_vs_milage.jpg)
+![Rav4 Exploratory Data Analysis](./image/Rav4_price_vs_mileage.jpg)
 
 ![XC60 Exploratory Data Analysis](./image/Volvo_price_vs_mile.jpg)
