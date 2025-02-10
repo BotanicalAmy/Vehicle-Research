@@ -13,9 +13,9 @@ Both CSV files in my repository were pulled in February of 2025. Since the easy 
 ## Scraping Edmunds.com
 For  those looking to complete a similar datascrape, I included detailed comments in my code. Issues of note:
 
-* AutoTrader was harder to scrape than Edmunds, so I switched website sources as the data looked to be the same
+* AutoTrader was harder to scrape than Edmunds, I switched website sources as the data looked to be the same
 * Selenium struggled to interact with the "Next page" elements, I used a pagination loop instead
-* The web scraping script kept timing out, which would drop all of the scraped data
+* The web scraping script kept timing out, I added a loop to skip pages with loading issues
 * To accomodate for the batch loading of pages, I added data to the CSV as well
 
 Utilizing both the loop to skip pages the and code to pull pages in batches was needed to retrieve the vehicle data without error.
