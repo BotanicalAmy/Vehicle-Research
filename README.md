@@ -11,11 +11,14 @@ Both CSV files in my repository were pulled in February of 2025. Since the easy 
 [Easy Data Option](http://myslu.stlawu.edu/~clee/dataset/autotrader/)
 
 ## Scraping Edmunds.com
-For  those looking to complete a similar datascrape, I included detailed comments in my code. Selenium struggled with the "next page" detection using a div based click. To create an alternative pagination function, I noticed that each additional page had "&pagenumber=#" to the end of the url. I created a loop to scrape one page at a time, increasing the page by one for each loop.
+For  those looking to complete a similar datascrape, I included detailed comments in my code. Issues of note:
 
-I had issues with the web driver timing out and certain pages, stalling the script an dropping the data. I updated my notebook to save each newly scraped page to the csv file and include a page number column. Looking at the csv, I could easily identify what data was properly saved to my file. When my script stalled on page 3, I started the web scrape again setting the page number equal to three. Since my loop increases by one each time, the script began on page four and successfully pulled the remaining pages.
+* AutoTrader was harder to scrape than Edmunds, so I switched website sources as the data looked to be the same
+* Selenium struggled to interact with the "Next page" elements, I used a pagination loop instead
+* The web scraping script kept timing out, which would drop all of the scraped data
+* To accomodate for the batch loading of pages, I added data to the CSV as well
 
-I additionally created a loop to skip pages that failed to load. Utilizing both the loop to skip pages the and code to pull pages in batches was needed to retrieve the vehicle data without error.
+Utilizing both the loop to skip pages the and code to pull pages in batches was needed to retrieve the vehicle data without error.
 
 ## Cleaning the data
 
