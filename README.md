@@ -16,7 +16,7 @@ For  those looking to complete a similar datascrape, I included detailed comment
 * AutoTrader was harder to scrape than Edmunds, I switched website sources as the data looked to be the same
 * Selenium struggled to interact with the "Next page" elements, I used a pagination loop instead
 * The web scraping script kept timing out, I added a loop to skip pages with loading issues
-* To accomodate for the batch loading of pages, I added data to the CSV as well
+* To accomodate for the batch loading of pages, I modified the CSV data load to operate in batches to prevent data loss
 
 Utilizing both the loop to skip pages the and code to pull pages in batches was needed to retrieve the vehicle data without error.
 
