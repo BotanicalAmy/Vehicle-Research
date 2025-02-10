@@ -43,7 +43,7 @@ The Volvo XC60 depreciation difference is less obvious on a scatterplot. Of note
 
 ![XC60 vs Rav Regression](./image/Volvo_vs_Rav4_regression.jpg)
 
-Looking at the comnbined linear models, the Volvo XC60 has a notably steeper drop in value as mileage increases. The two linear models intersect at 44,000 miles, indicating that a Rav4 and XC60 are predicted to have the same price at this mileage. Seeing the two datasets together, I became hopeful that math would indeed justify the purchase of a gently used Volvo XC60.
+Looking at the combined linear models, the Volvo XC60 has a notably steeper drop in value as mileage increases. The two linear models intersect at 44,000 miles, indicating that a Rav4 and XC60 are predicted to have the same price at this mileage. Seeing the two datasets together, I became hopeful that math would indeed justify the purchase of a gently used Volvo XC60.
 
 Looking at the models below, the y-intercept for the Volvo XC60 begins at $41,459, higher than the $37,382 y-intercept for the Rav4. This is not surprising, as the starting cost of the XC60 is significantly higher than the Rav4.
 
