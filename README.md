@@ -53,24 +53,24 @@ Looking at the models below, the y-intercept for the Volvo XC60 begins at $41,45
 Both models have a similar R^2 value. For the Volvo XC60, 71% of the variability is explained by the model, while 74% of the variability is explained by the model for the Rav4. Additionally, the Volvo XC60 has a larger standard error, indicating that predictions are often off by $4,906. This error is $855 more than the Rav4. The Volvo XC60 does appear to have a broader range of trim levels, which could account for this extra variability.
 
 ### Volvo XC60 Linear Regression Model
-Regression equation: predicted_price = 41459.0 -0.26 * mileage <br />
-R^2: 0.71 <br /> 
-Standard Error: 4906.31 <br />
-Vehicles in the data set: 251 <br />
+* Regression equation: predicted_price = 41459.0 -0.26 * mileage 
+* R^2: 0.71 
+* Standard Error: 4906.31 
+* Vehicles in the data set: 251 
 
 Simply put, for every increase in mileage, the predicted price of a Volvo XC60 decreases by $.26.
 
 ### Toyota Rav4 Linear Regression Model
-Regression equation: predicted_price = 37392.46 -0.16 * mileage <br />
-R^2: 0.74 <br />
-Standard Error: 4051.23 <br />
-Vehicles in the data set: 300 <br />
+* Regression equation: predicted_price = 37392.46 -0.16 * mileage 
+* R^2: 0.74 
+* Standard Error: 4051.23 
+* Vehicles in the data set: 300 
 
 For every increase in mileage, the predicted price of a Toyota Rav4 decreases by $.16. Looking only at mileage depreciatation, the Toyota Rav4 is approximately ten cents cheaper to drive per mile than the Volvo XC60.
 
-Note: I did not assess for LNE conditions in this notebook. In my R exercise, I found powering down the mileage values, taking the square root of the explanatory, had a significant improvement on linearity, normality and equal variance of the residuals. This transformation additionally improved my R^2 value. 
+*Note*: I did not assess for LNE conditions in this notebook. In my R exercise, I found powering down the mileage values (taking the square root of the explanatory) had a significant improvement on linearity, normality and equal variance of the residuals. This transformation additionally improved my R^2 value. 
 
-*For the non-statisticians*, taking the square root of mileage and then creating a predictive model improved the accuracy.
+*For the non-statisticians*: taking the square root of mileage and then creating a predictive model improved the accuracy.
 
 ![XC60 vs Rav4](./image/XC60_Rav4_Pic.jpg)
 
@@ -93,10 +93,10 @@ After predicting the value of the vehicles when it was time to pass them along t
 * The predicted net ownership cost for the Volvo XC60 is $54,177
 * The predicted net ownership cost for the Toyota Rav4 is $38,350
 
-When purchasing at 40,000 and selling at 150,000 and considering cost of ownership, the Volvo XC60 is predicted to be $15,826 more expensive than the Toyota Rav4.
+When purchasing at 40,000 miles and selling at 150,000 miles, and considering cost of ownership, the Volvo XC60 is predicted to be $15,826 more expensive than the Toyota Rav4.
 
 # Conclusion
-While the rapid depreciation of the Volvo XC60 confirmed my hypothesis that a XC60 and Rav4 are similar in price at 40,000 miles, the Volvo XC60 is predicted to be 41.3% more expensive than the Rav4 over if purchased at 40,000 miles and driven until it reaches 150,000  miles.
+While the rapid depreciation of the Volvo XC60 confirmed my hypothesis that a XC60 and Rav4 are similar in price at 40,000 miles, the Volvo XC60 is predicted to be 41.3% more expensive than the Rav4 if purchased at 40,000 miles and driven until it reaches 150,000  miles.
 
 ### Considerations
 The Volvo XC60 data was sourced from Edmunds.com and the Rav4 data was pulled from a tool using Auto Trader. I noticed that some of the Edmunds values came from Carvana. While I had used a local search for the Edmunds.com web scraping, doing a scrape for both the Volvo XC60 and Toyota Rav4 would have been a better analysis.
